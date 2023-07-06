@@ -1,0 +1,160 @@
+/* profile info start */
+.profile-body .profile-img {
+  width: 100%;
+  height: auto;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #fff 17.71%,
+    rgba(67, 67, 67, 0) 100%
+  );
+}
+.profile-body .name-title {
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+.profile-body .name {
+  color: #7127ba;
+}
+.profile-body .subtitle {
+  color: #fff;
+  font-size: 17px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.34px;
+  text-decoration-line: underline;
+}
+.profile-body .content {
+  color: #fff;
+  font-size: 50px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126.664%;
+  letter-spacing: 1px;
+}
+.profile-body .content-sep {
+  color: #7127ba;
+}
+.profile-body .description {
+  color: #fff;
+  font-size: 11px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.22px;
+}
+
+.profile-body .title {
+  color: #fff;
+  font-size: 50px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 42px;
+}
+.profile-body .position {
+  color: #fff;
+  font-size: 21px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.profile-body .company {
+  color: #1877f2;
+}
+.profile-body .my-info {
+  color: #fff;
+  font-size: 18px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.44px;
+}
+/* profile info end */
+
+/* work experience start */
+.work-experience {
+  border-radius: 700px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+
+.work-experience .work-title {
+  color: #fff;
+  font-size: 40px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+/* work exoerience end */
+
+/* skills start */
+.skills-body .skills-title {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 71px;
+  letter-spacing: 4px;
+}
+
+.skills-body .skills-img {
+  height: auto;
+  object-fit: cover;
+  /* image center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* skills end */
+
+/* contact start */
+
+.contact-body .title {
+  color: #fff;
+  font-size: 25px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.contact-body .content {
+  color: #fff;
+  font-size: 15px;
+  font-family: Preahvihear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+/* contact end */
+
+/* social start */
+.social-body .social-icon {
+  cursor: pointer;
+}

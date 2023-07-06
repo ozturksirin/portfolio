@@ -1,0 +1,65 @@
+.example-body .content {
+  color: #ccd6f6;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  padding: 10px;
+}
+/* center */
+.example-body .content-col {
+  height: auto;
+  position: relative;
+}
+.example-body .title {
+  color: #9857d3;
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+.example-body .sub-title {
+  color: #ccd6f6;
+  font-size: 34px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.example-body .content-area {
+  padding: 10px;
+  border-radius: 14px;
+  /* background: url("../images/blur.png"),
+    lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat,
+    radial-gradient(
+      151.92% 127.02% at 15.32% 21.04%,
+      rgba(105, 59, 147, 0.2) 0%,
+      rgba(110, 191, 244, 0.04) 77.08%,
+      rgba(70, 144, 212, 0) 100%
+    ); */
+  /* background-blend-mode: overlay, normal; */
+  /* backdrop-filter: blur(40px); */
+  border-radius: 14px;
+  box-shadow: 0px 39.87361526489258px 39.87361526489258px 0px
+    rgba(69, 42, 124, 0.15);
+  backdrop-filter: blur(40px);
+  /* center */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.example-body .spline-col {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
