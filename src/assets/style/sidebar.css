@@ -19,10 +19,14 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding-left: 20px;
+  padding-left: 24px;
 }
 .sidebar-body .sidebar-link {
   cursor: pointer;
+}
+.sidebar-body .sidebar-link:hover {
+  background-color: #7127ba;
+  border-radius: 50px;
 }
 .sidebar-body .active {
   background-color: #7127ba;

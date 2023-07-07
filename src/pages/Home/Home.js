@@ -12,17 +12,19 @@ import github from '../../assets/images/icons/github.svg'
 import twitter from '../../assets/images/icons/twitter.svg'
 import medium from '../../assets/images/icons/medium.svg'
 import google from '../../assets/images/icons/google.svg'
+import Spline from '@splinetool/react-spline';
+
+import myProfile from '../../assets/images/myProfile.png'
+
 const Home = () => {
-
-
     return (
         <Container fluid="md">
             <Row>
                 <Col md={7}>
                     <div className='profile-body mt-5'>
                         <div className='d-flex'>
-                            <div>
-                                <Image className='profile-img mt-5' src={profile} />
+                            <div className='img-area'>
+                                <Image className='profile-img mt-5' src={myProfile} />
                             </div>
                             <div className='d-block'>
                                 <div className='d-flex'>
@@ -71,7 +73,84 @@ const Home = () => {
             </div>
 
             <div className='example-project mt-5'>
-                <ExampleProject />
+                <ExampleProject
+                    title={'TEST'}
+                    subTitle={'test'}
+                    content={
+                        `
+                        A web app for visualizing personalized Spotify data. View your
+                        top artists, top tracks, recently played tracks, and detailed audio
+                        information about each track. Create and save new playlists of
+                        recommended tracks based on your existing playlists and more.
+                        `
+                    }
+                    spline={
+                        <Spline scene="https://prod.spline.design/gl5RN1PooHnnvVP3/scene.splinecode"
+                            style={{
+                                width: '500px', height: '400px',
+                                position: 'relative',
+                            }}
+                        />
+                    }
+                    splineSecond={
+                        <Spline scene="https://prod.spline.design/4ufXr2X7hbCnHk-L/scene.splinecode"
+                            style={{
+                                width: '500px', height: '500px',
+                                position: 'relative',
+                            }}
+                        />
+                    }
+                    titleSecond={'test2'}
+                    subTitleSecond={'test2'}
+                    contentSecond={
+                        `
+                        A web app for visualizing personalized Spotify data. View your
+                        top artists, top tracks, recently played tracks, and detailed audio
+                        information about each track. Create and save new playlists of
+                        recommended tracks based on your existing playlists and more.
+                        `
+                    }
+                />
+                <ExampleProject
+                    title={'TEST'}
+                    subTitle={'test'}
+                    content={
+                        `
+                        A web app for visualizing personalized Spotify data. View your
+                        top artists, top tracks, recently played tracks, and detailed audio
+                        information about each track. Create and save new playlists of
+                        recommended tracks based on your existing playlists and more.
+                        `
+                    }
+                    spline={
+                        <Spline scene="https://prod.spline.design/UW0MVUj7DDRdVWwX/scene.splinecode"
+                            style={{
+                                width: '500px', height: '500px',
+                                position: 'relative',
+                            }}
+                        />
+                    }
+                    splineSecond={
+                        <Spline scene="https://prod.spline.design/tDAX0OfVBN99T4oM/scene.splinecode"
+                            style={{
+                                width: '500px', height: '500px',
+                                position: 'relative',
+                            }}
+                        />
+
+                    }
+                    titleSecond={'test2'}
+                    subTitleSecond={'test2'}
+                    contentSecond={
+                        `
+                        A web app for visualizing personalized Spotify data. View your
+                        top artists, top tracks, recently played tracks, and detailed audio
+                        information about each track. Create and save new playlists of
+                        recommended tracks based on your existing playlists and more.
+                        `
+                    }
+
+                />
             </div>
             <section id='contact-section'>
                 <div className='contact-body mt-5 mb-5'>

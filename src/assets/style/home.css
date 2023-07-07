@@ -7,7 +7,11 @@
     #fff 17.71%,
     rgba(67, 67, 67, 0) 100%
   );
+  /* border-radius: 50px; */
 }
+/* .profile-body .img-area {
+  position: relative;
+} */
 .profile-body .name-title {
   color: #fff;
   text-align: center;
