@@ -17,14 +17,14 @@ const Sidebar = () => {
                 >
                     <Image src={home} alt='home' className='icon' />
                 </Link>
-                <Link to='/'
+                <Link to='profile-section'
                     className='sidebar-link'
                     activeClass='active'
                 >
                     <Image src={profile} alt='home' className='icon' />
                 </Link>
 
-                <Link to='/'
+                <Link to='work-section'
                     className='sidebar-link'
                     activeClass='active'
                 >

@@ -39,11 +39,13 @@
     rgba(69, 42, 124, 0.15);
   backdrop-filter: blur(40px); */
   /* center */
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* center */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .example-body .spline-col {

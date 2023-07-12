@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../assets/style/home.css'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import profile from '../../assets/images/profile.png'
+// import profile from '../../assets/images/profile.png'
 import arrow from '../../assets/images/Arrow.svg'
 import WorkCard from '../../components/WorkCard'
 import skills from '../../assets/images/skills.png'
@@ -15,143 +15,156 @@ import google from '../../assets/images/icons/google.svg'
 import Spline from '@splinetool/react-spline';
 
 import myProfile from '../../assets/images/myProfile.png'
+import { TypeAnimation } from 'react-type-animation'
+// import SnakeGame from '../../components/SnakeGame'
 
 const Home = () => {
     return (
         <Container fluid="md">
-            <Row>
-                <Col md={7}>
-                    <div className='profile-body mt-5'>
-                        <div className='d-flex'>
-                            <div className='img-area'>
-                                <Image className='profile-img mt-5' src={myProfile} />
-                            </div>
-                            <div className='d-block'>
-                                <div className='d-flex'>
-                                    <Image className='arrow' src={arrow} />
-                                    <h1 className='name-title'> Hello I' AM <span className='name'>Öztürk Şirin</span></h1>
+            <section id='profile-section'>
+                <Row className='w-100 mt-5'>
+                    <Col md={8}>
+                        <div className='profile-body'>
+                            <div className='d-flex'>
+                                <div className='img-area'>
+                                    <Image className='profile-img mt-5' src={myProfile} />
                                 </div>
-                                <div style={{ marginLeft: 50 }}>
-                                    <h2 className='subtitle'>A Software Developer who</h2>
-                                    <h3 className='content'>Judges a book <br /> by its <span className='content-sep'>cover</span>...</h3>
-                                    <p className='description'>Because if the cover does not impress you what else can?</p>
+                                <div className='d-block'>
+                                    <div className='d-flex'>
+                                        <Image className='arrow' src={arrow} />
+                                        <h1 className='name-title'> Hello I' AM <span className='name'>Öztürk Şirin</span></h1>
+                                    </div>
+                                    <div style={{ marginLeft: 50 }}>
+                                        <h2 className='subtitle'>A Software Developer who</h2>
+                                        <h3 className='content'>Code speaks louder than <span className='content-sep'>words</span>...</h3>
+                                        <p className='description'>Let your creations do the talking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='basic-about mt-5'>
+                                <TypeAnimation
+                                    className='title'
+                                    cursor={true}
+                                    sequence={['I am a Software Developer.',
+                                        2000,
+                                        'I am a  Programmer.',
+                                        2000,
+                                        'I am a Software Developer.',
+                                    ]}
+                                    speed={20}
+                                    repeat={Infinity}
+
+
+                                />
+                                <p className='position'>I am currently working as a <span className='company'>freelencer</span>,</p>
+                                <div>
+                                    <p className='my-info mt-5'>
+                                        Hello, I graduated from BANDIRMA ONYEDİ EYLÜL UNIVERSITY computer programming.
+                                        I gained important experience during my internship at the beginning of my career.
+                                        I had the opportunity to improve myself especially in frontend development and took an active role in a total of 2 projects.
+                                        These projects allowed me to gain extensive experience by working on both mobile and web platforms.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div className='basic-about mt-5'>
-                            <p className='title'>I'm a Software Engineer.|</p>
-                            <p className='position'>Currently, I'm a Software Engineer at<span className='company'> Facebook</span>,</p>
-                            <div>
-                                <p className='my-info mt-5'>
-                                    A self-taught UI/UX designer, functioning in the industry for 3+ years now.
-                                    I make meaningful and delightful digital products that create an equilibrium
-                                    between user needs and business goals.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-            <div className='work-experience' style={{ marginTop: 80 }}>
+                    </Col>
+                </Row>
+            </section>
+            {/* <div className='work-experience' style={{ marginTop: 80 }}>
                 <h1 className='work-title'>Work Experience</h1>
                 <Row>
                     <Col md={6}>
                         <WorkCard />
-                        <WorkCard />
                     </Col>
                     <Col md={6}>
                         <WorkCard />
-                        <WorkCard />
                     </Col>
                 </Row>
-            </div>
+            </div> */}
             <div className='skills-body mt-5'>
                 <p className='skills-title'>
                     Skills
                 </p>
                 <Image className='skills-img' src={skills} alt='skills' />
             </div>
+            <section id='work-section'>
+                <div className='example-project mt-5'>
+                    <ExampleProject
+                        title={'İlkay Elektronik'}
+                        subTitle={'Web Site'}
+                        content={
+                            `
+                        İlkay Elektronik is a business that sells satellite, television, 
+                        electronic equipment and similar technological products to its customers.
+                        It is a corporate website with a simple, simple design, made for easy use 
+                        and to increase user interaction. ( Built with reactjs technology )
+                        `
+                        }
+                        spline={
+                            <Spline scene="https://prod.spline.design/gl5RN1PooHnnvVP3/scene.splinecode"
+                                style={{
+                                    width: '500px', height: '400px',
+                                    position: 'relative',
+                                }}
+                            />
+                        }
+                        splineSecond={
+                            <Spline scene="https://prod.spline.design/4ufXr2X7hbCnHk-L/scene.splinecode"
+                                style={{
+                                    width: '500px', height: '500px',
+                                    position: 'relative',
+                                }}
+                            />
+                        }
+                        titleSecond={'Music App'}
+                        subTitleSecond={'Mobile App'}
+                        contentSecond={
+                            `
+                        A mobile application I made between the courses and projects
+                        I followed while learning react native development. (Developed with React native)
+                        `
+                        }
+                    />
+                    <ExampleProject
+                        title={'Irrigation system'}
+                        subTitle={'Mobile App & Ardunio'}
+                        content={
+                            `
+                        Plant irrigation system that can be controlled via mobile application developed with esp-8266.
+                        I did the mobile application development.
+                        In the hardware part, we worked together with my teammate. ( Developed with Java )
+                        `
+                        }
+                        spline={
+                            <Spline scene="https://prod.spline.design/UW0MVUj7DDRdVWwX/scene.splinecode"
+                                style={{
+                                    width: '500px', height: '500px',
+                                    position: 'relative',
+                                }}
+                            />
+                        }
+                        splineSecond={
+                            <Spline scene="https://prod.spline.design/tDAX0OfVBN99T4oM/scene.splinecode"
+                                style={{
+                                    width: '500px', height: '500px',
+                                    position: 'relative',
+                                }}
+                            />
 
-            <div className='example-project mt-5'>
-                <ExampleProject
-                    title={'TEST'}
-                    subTitle={'test'}
-                    content={
+                        }
+                        titleSecond={'Todo App'}
+                        subTitleSecond={'Mobile App'}
+                        contentSecond={
+                            `
+                       A simple mobile app that I made between
+                        the lessons and projects I watched while learning react native development.
+                        (Developed with React Native)
                         `
-                        A web app for visualizing personalized Spotify data. View your
-                        top artists, top tracks, recently played tracks, and detailed audio
-                        information about each track. Create and save new playlists of
-                        recommended tracks based on your existing playlists and more.
-                        `
-                    }
-                    spline={
-                        <Spline scene="https://prod.spline.design/gl5RN1PooHnnvVP3/scene.splinecode"
-                            style={{
-                                width: '500px', height: '400px',
-                                position: 'relative',
-                            }}
-                        />
-                    }
-                    splineSecond={
-                        <Spline scene="https://prod.spline.design/4ufXr2X7hbCnHk-L/scene.splinecode"
-                            style={{
-                                width: '500px', height: '500px',
-                                position: 'relative',
-                            }}
-                        />
-                    }
-                    titleSecond={'test2'}
-                    subTitleSecond={'test2'}
-                    contentSecond={
-                        `
-                        A web app for visualizing personalized Spotify data. View your
-                        top artists, top tracks, recently played tracks, and detailed audio
-                        information about each track. Create and save new playlists of
-                        recommended tracks based on your existing playlists and more.
-                        `
-                    }
-                />
-                <ExampleProject
-                    title={'TEST'}
-                    subTitle={'test'}
-                    content={
-                        `
-                        A web app for visualizing personalized Spotify data. View your
-                        top artists, top tracks, recently played tracks, and detailed audio
-                        information about each track. Create and save new playlists of
-                        recommended tracks based on your existing playlists and more.
-                        `
-                    }
-                    spline={
-                        <Spline scene="https://prod.spline.design/UW0MVUj7DDRdVWwX/scene.splinecode"
-                            style={{
-                                width: '500px', height: '500px',
-                                position: 'relative',
-                            }}
-                        />
-                    }
-                    splineSecond={
-                        <Spline scene="https://prod.spline.design/tDAX0OfVBN99T4oM/scene.splinecode"
-                            style={{
-                                width: '500px', height: '500px',
-                                position: 'relative',
-                            }}
-                        />
+                        }
 
-                    }
-                    titleSecond={'test2'}
-                    subTitleSecond={'test2'}
-                    contentSecond={
-                        `
-                        A web app for visualizing personalized Spotify data. View your
-                        top artists, top tracks, recently played tracks, and detailed audio
-                        information about each track. Create and save new playlists of
-                        recommended tracks based on your existing playlists and more.
-                        `
-                    }
-
-                />
-            </div>
+                    />
+                </div>
+            </section>
             <section id='contact-section'>
                 <div className='contact-body mt-5 mb-5'>
                     <Row className='w-100'>
