@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+  .sidebar-body {
+    display: none;
+  }
+
+  /* profile start */
+  .profile-body .mobile-profile {
+    display: block !important;
+  }
+  .profile-body .arrow {
+    display: none;
+  }
+  .profile-body .profile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50px;
+  }
+  .profile-body .test {
+    display: block !important;
+  }
+  .profile-body .content {
+    font-size: 35px !important;
+    line-height: 102.664% !important;
+  }
+  .profile-body .title {
+    font-size: 26px !important;
+  }
+  .profile-body .position {
+    font-size: 14px;
+  }
+  .profile-body .my-info {
+    font-size: 14px;
+  }
+  /* profile body end */
+
+  /* skills start */
+  .skills-body .skills-img {
+    width: 100% !important;
+  }
+  /* skills end */
+
+  /* example project start */
+  .example-body .content-area {
+    height: auto !important;
+  }
+}

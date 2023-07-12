@@ -3,7 +3,7 @@ import '../../assets/style/home.css'
 import { Container, Row, Col, Image } from 'react-bootstrap'
 // import profile from '../../assets/images/profile.png'
 import arrow from '../../assets/images/Arrow.svg'
-import WorkCard from '../../components/WorkCard'
+// import WorkCard from '../../components/WorkCard'
 import skills from '../../assets/images/skills.png'
 import ExampleProject from '../../components/ExampleProject'
 import instagram from '../../assets/images/icons/instagram.svg'
@@ -16,7 +16,6 @@ import Spline from '@splinetool/react-spline';
 
 import myProfile from '../../assets/images/myProfile.png'
 import { TypeAnimation } from 'react-type-animation'
-// import SnakeGame from '../../components/SnakeGame'
 
 const Home = () => {
     return (
@@ -25,14 +24,14 @@ const Home = () => {
                 <Row className='w-100 mt-5'>
                     <Col md={8}>
                         <div className='profile-body'>
-                            <div className='d-flex'>
+                            <div className='d-flex mobile-profile'>
                                 <div className='img-area'>
-                                    <Image className='profile-img mt-5' src={myProfile} />
+                                    <Image className='profile-img mt-5' src={myProfile} alt='öztürk|şirin|portfolio' />
                                 </div>
                                 <div className='d-block'>
-                                    <div className='d-flex'>
-                                        <Image className='arrow' src={arrow} />
-                                        <h1 className='name-title'> Hello I' AM <span className='name'>Öztürk Şirin</span></h1>
+                                    <div className='d-flex test'>
+                                        <Image className='arrow' src={arrow} alt='arrow' />
+                                        <h1 className='name-title'>Hello I' AM <span className='name'>Öztürk Şirin</span></h1>
                                     </div>
                                     <div style={{ marginLeft: 50 }}>
                                         <h2 className='subtitle'>A Software Developer who</h2>
@@ -103,7 +102,7 @@ const Home = () => {
                         spline={
                             <Spline scene="https://prod.spline.design/gl5RN1PooHnnvVP3/scene.splinecode"
                                 style={{
-                                    width: '500px', height: '400px',
+                                    height: '400px',
                                     position: 'relative',
                                 }}
                             />
@@ -111,7 +110,7 @@ const Home = () => {
                         splineSecond={
                             <Spline scene="https://prod.spline.design/4ufXr2X7hbCnHk-L/scene.splinecode"
                                 style={{
-                                    width: '500px', height: '500px',
+                                    height: '500px',
                                     position: 'relative',
                                 }}
                             />
@@ -138,7 +137,7 @@ const Home = () => {
                         spline={
                             <Spline scene="https://prod.spline.design/UW0MVUj7DDRdVWwX/scene.splinecode"
                                 style={{
-                                    width: '500px', height: '500px',
+                                    height: '500px',
                                     position: 'relative',
                                 }}
                             />
@@ -146,7 +145,7 @@ const Home = () => {
                         splineSecond={
                             <Spline scene="https://prod.spline.design/tDAX0OfVBN99T4oM/scene.splinecode"
                                 style={{
-                                    width: '500px', height: '500px',
+                                    height: '500px',
                                     position: 'relative',
                                 }}
                             />
@@ -156,10 +155,10 @@ const Home = () => {
                         subTitleSecond={'Mobile App'}
                         contentSecond={
                             `
-                       A simple mobile app that I made between
-                        the lessons and projects I watched while learning react native development.
-                        (Developed with React Native)
-                        `
+                            A simple mobile app that I made between
+                            the lessons and projects I watched while learning react native development.
+                            (Developed with React Native)
+                            `
                         }
 
                     />
